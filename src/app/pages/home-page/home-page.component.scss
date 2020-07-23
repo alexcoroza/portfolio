@@ -1,0 +1,70 @@
+:host {
+  div.home-page-component {
+    position: relative;
+    height: 100vh;
+    background-image: url('../../../assets/images/home-page-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    div.dark-overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(66, 66, 66, 0.6);
+    }
+
+    div.content {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      color: #EEEEEE;
+      overflow-y: auto;
+      padding-top: 200px;
+
+      div.avatar img {
+        object-fit: cover;
+        border-radius: 50%;
+        height: 175px;
+        width: 175px;
+        box-shadow: 0px 0px 80px 10px #0097A7;
+      }
+
+      div.info-container {
+        div.name {
+          font-size: 50px;
+        }
+
+        div.job-title {
+          font-weight: 300;
+          font-style: italic;
+          font-size: 25px;
+        }
+      }
+    }
+
+    div.content.mobile {
+      padding-top: 30px;
+  
+      div.avatar img {
+        height: 125px;
+        width: 125px;
+      }
+  
+      div.info-container {
+        div.name {
+          font-size: 30px;
+        }
+  
+        div.job-title {
+          font-weight: 300;
+          font-style: italic;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

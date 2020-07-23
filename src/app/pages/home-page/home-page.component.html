@@ -1,4 +1,12 @@
 <div class="home-page-component">
-  <div>qwe</div>
-  <div>zxc</div>
+  <div class="dark-overlay"></div>
+  <div class="content" [ngClass.lt-md]="'mobile'" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="start center">
+    <div class="avatar">
+      <img src="assets/images/avatar.jpg" alt="avatar">
+    </div>
+    <div class="info-container" fxLayout="column" fxLayoutAlign="center center">
+      <div class="name">Alex Coroza</div>
+      <div class="job-title">Software Developer</div>
+    </div>
+  </div>
 </div>
